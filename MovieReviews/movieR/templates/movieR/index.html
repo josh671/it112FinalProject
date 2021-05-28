@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %} 
+<div id="container">
+    <div id="intro-letters">
+        <h1 id="intro">"Welcome to Movie Reviews"</h1>
+        <button type="button" class="home-button">Learn More</button>
+    </div>
+</div>
+<div id="reviewers">
+    <div class="rows">
+        {% load static %}
+        <img src="{% static 'it112-images/background.jpg'%}" class="rounded-circle" alt="Cinque Terre" >  
+    </div> 
+    <div class="blank-row">
+
+    </div>
+    <div class="rows">
+        {% load static %}
+        <img src="{% static 'it112-images/background.jpg'%}" class="rounded-circle" alt="Cinque Terre" >  
+    </div> 
+    
+</div>
+
+
+{% endblock %} 
