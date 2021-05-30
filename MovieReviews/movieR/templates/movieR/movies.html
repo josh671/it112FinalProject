@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %} 
+<div id="wrapper">
+    <div id="reviewContainer">
+<h2 class="movieReviews">Here are Movies we have!</h2>
+
+<ul>
+    {% for m in movies_list %}
+     <li> <a href="{% url 'movies' id=m.id  %}">{{ m.MovieTypeName }}</a></li>
+     {% endfor %}
+
+</ul>
+
+</div>
+</div>
+{% endblock %} 

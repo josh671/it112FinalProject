@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %} 
+<div id="wrapper">
+    <div id="reviewContainer">
+<h2 class="movieReviews">Here is the Movie on Review for the Week.</h2>
+<h3>Please leave your reviews down below.</h3>
+<ul>
+    {% for m in reviews_list %}
+     <li> {{ m.MovieReviewerName }}</li>
+     <li> {{ m.MovieName }}</li>
+     <li> {{ m.MovieReview }}</li>
+     {% endfor %}
+
+</ul>
+{% endblock %} 
+</div>
+</div>

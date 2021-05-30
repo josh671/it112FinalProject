@@ -28,7 +28,8 @@ class Movies(models.Model):
 
 class Reviews(models.Model): 
     MovieReview=models.TextField()
-    Movieid=models.ForeignKey(Movies, on_delete=models.CASCADE)
+    MovieName=models.CharField(max_length=255)
+    MovieReviewerName=models.CharField(max_length=255)
     ReviewDate=DateField() 
 
     def __str__(self): 
