@@ -6,11 +6,12 @@
 <h3>Please leave your reviews down below.</h3>
 <ul>
     {% for m in reviews_list %}
-     <li> {{ m.MovieReviewerName }}</li>
+    <div class="review_container">
+    <h3>Review by: {{ m.MovieReviewerName }} </h3>
      <li> {{ m.MovieName }}</li>
      <li> {{ m.MovieReview }}</li>
      {% endfor %}
-
+    </div>
 </ul>
 {% endblock %} 
 </div>

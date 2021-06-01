@@ -20,7 +20,7 @@
       <a class="navbar-brand" href="{% url 'index' %}">Home</a>
       <a class="navbar-brand" href="{% url 'movies' %}">Movies</a>
       <a class="navbar-brand" href="{% url 'reviews' %}">Reviews</a>
-      <a class="navbar-brand" href="#">About</a>
+      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -28,12 +28,12 @@
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Reviews
+              Movie Forms
             </a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Comadies</a></li>
-              <li><a class="dropdown-item" href="#">Romance</a></li>
-              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="{% url 'newmovietype' %}">Add Movie Type</a></li>
+              <li><a class="dropdown-item" href="{% url 'newmovie' %}">New Movie</a></li>
+              <li><a class="dropdown-item" href="{% url 'newreview' %}">New review</a></li>
             </ul>
           </li>
         </ul>

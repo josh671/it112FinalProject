@@ -103,9 +103,10 @@ body{
 /* START OF MOVIE REVIEWS */ 
 #wrapper{ 
     width: 100%; 
-    background: black; 
-    color: white; 
+    color: black;
     display: block;
+    overflow: none
+;
 }
 
 #reviewContainer{ 
@@ -116,4 +117,17 @@ body{
 }
 .movieReviews{ 
     margin-top: 100px; 
+} 
+
+/* forms css */
+.table_container{ 
+    padding-top: 150px;
+} 
+
+.review_container{ 
+    border-bottom: solid 1px white; 
+    margin-bottom: 10px; 
+    padding: 10px; 
+    position: absolute; 
+    display: block;
 }

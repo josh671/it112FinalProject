@@ -8,5 +8,11 @@ urlpatterns = [
     path('movies/', views.movies, name='movies'), 
     
     path('moviesdetails/<int:id>', views.moviesdetails, name='movies'),
-    path('reviews/', views.reviews, name='reviews' )
+    path('reviews/', views.reviews, name='reviews' ), 
+
+    #paths for forms 
+    path('newmovietype/', views.newMovieType, name='newmovietype'),
+
+    path('newmovie/', views.newMovie, name='newmovie'),
+    path('newreview/', views.newMovieReview, name='newreview'),
 ]
