@@ -75,21 +75,40 @@ body{
     position: absolute;
     display: block;
     background-color: lightgreen;   
+    text-align: center;
 }  
 
 #reviewers .rows{ 
-    width: 70%;
+    width: 80%;
     float: right; 
     border: solid black 1px; 
     display: block; 
     overflow: visible;
 }
 
+
 .rounded-circle{ 
-    width: 350px; 
-    height: 350px;
+    background: white;
+    width: 300px; 
+    height: 300px;
     border:solid 10px lightgrey;
 }
+
+.reviewer_description{ 
+    width: 50%;
+    float: left;
+    clear: both;
+    margin-top: 100px; 
+    
+} 
+
+.reviwer_info{ 
+    font-size:1em; 
+    font-weight: bold; 
+    line-height: 1.2em; 
+    padding-left: 25px; 
+}
+
 
 .blank-row{ 
     display:block; 
