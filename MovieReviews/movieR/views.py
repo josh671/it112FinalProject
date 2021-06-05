@@ -24,6 +24,7 @@ def reviews(request):
     return render(request, 'movieR/reviews.html', {'reviews_list': reviews_list})  
 
 #views for the form 
+@login_required
 def newMovieType(request): 
     form=MovieTypeForm 
     if request.method=='POST': 
@@ -36,6 +37,7 @@ def newMovieType(request):
         form=MovieTypeForm
     return render(request, 'movieR/newmovietype.html', {'form':form})
 
+@login_required
 def newMovie(request): 
     form=MoviesForm 
     if request.method=='POST': 
