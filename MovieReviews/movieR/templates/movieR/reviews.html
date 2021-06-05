@@ -8,8 +8,8 @@
     {% for m in reviews_list %}
     <div class="review_container">
     <h3>Review by: {{ m.MovieReviewerName }} </h3>
-     <li> {{ m.MovieName }}</li>
-     <li> {{ m.MovieReview }}</li>
+     <li> Movies Name: {{ m.MovieName }}</li>
+     <li> Movies Review{{ m.MovieReview }}</li>
      {% endfor %}
     </div>
 </ul>

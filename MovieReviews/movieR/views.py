@@ -2,6 +2,8 @@ from django.shortcuts import get_object_or_404, render
 from .models import Movies, MovieType, Reviews
 from django.urls import reverse_lazy
 #adding form stuff 5-31-2021
+#adding login stuffs 
+from django.contrib.auth.decorators import login_required 
 from .forms import MovieTypeForm, ReviewsForm, MoviesForm
 # Create your views here.
 #5-24-2021
@@ -45,7 +47,8 @@ def newMovie(request):
     else: 
         form=MoviesForm
     return render(request, 'movieR/newmovie.html', {'form':form})
-
+#required login
+@login_required
 def newMovieReview(request): 
     form=ReviewsForm 
     if request.method=='POST': 
@@ -56,4 +59,12 @@ def newMovieReview(request):
             form=ReviewsForm()
     else: 
         form=ReviewsForm
-    return render(request, 'movieR/newmovie.html', {'form':form})
+    return render(request, 'movieR/newmovie.html', {'form':form})   
+
+
+#start of login/out
+def loginmessage(request): 
+    return render(request, 'movieR/loginmessage.html')
+    
+def logoutmessage(request): 
+    return render(request, 'movieR/logoutmessage.html')
